@@ -714,9 +714,8 @@ class FanGraphDialog(QDialog):
                     color = self.get_color_for_value(value, sensor_type)
                     label = page_info['grid_layout'].itemAtPosition(row, col).widget()
 
-                    # 创建平面径向渐变（中心到边缘的微小差异）
-                    center_color = color.name()
-                    edge_color = color.lighter(15).name()
+                    # 使用纯色背景
+                    bg_color = color.name()
 
                     # 判断是否在大组边界上
                     is_top = (row % 4 == 0)
@@ -740,11 +739,7 @@ class FanGraphDialog(QDialog):
                             border-left: {border_left};
                             border-right: {border_right};
                             border-bottom: {border_bottom};
-                            background: qradialgradient(
-                                cx:0.5, cy:0.5, radius:0.5,
-                                stop:0 {center_color},
-                                stop:1 {edge_color}
-                            );
+                            background-color: {bg_color};
                             color: {text_color};
                         }}
                     """)

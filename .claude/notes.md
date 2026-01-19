@@ -59,6 +59,11 @@
 **原因**: pymongo 新版本不再支持 `if not self.db:` 这种布尔判断
 **修复**: 改为 `if self.db is None:` 进行 None 判断
 
+### 2026-01-19 - 去掉图形查看的3D阴影效果
+**修改文件**: `main_gui.py` - `update_page_data` 方法
+**修改内容**: 将 `qradialgradient` 径向渐变改为纯色背景 `background-color`
+**原因**: 用户不需要3D阴影效果，改为纯色显示更清晰
+
 ---
 
 ## 待办事项
