@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(where:*)",
+      "Bash(D:ProgramDataAnaconda3python.exe:*)",
+      "Bash(timeout:*)",
+      "Bash(\"D:\\\\ProgramData\\\\Anaconda3\\\\python.exe\":*)",
+      "Bash(conda activate:*)",
+      "Bash(pip show:*)",
+      "Bash(redis-cli:*)",
+      "Bash(mongosh:*)",
+      "Bash(mongo:*)",
+      "Bash(tasklist:*)"
+    ]
+  }
+}
